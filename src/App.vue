@@ -181,7 +181,7 @@ export default {
 
       jobsToConnect.forEach(({ requiredJobUuid, uuid }) => {
         // If we can find the required job, connect them
-        if (g.node(requiredJobUuid)) {
+        if (g.node(requiredJobUuid) && g.node(uuid)) {
           g.setEdge(requiredJobUuid, uuid, { width: 40 });
           // Else remove it, as it doesn't have its parent
         } else {

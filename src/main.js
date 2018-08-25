@@ -4,7 +4,6 @@ import 'codemirror/mode/yaml/yaml';
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/mdn-like.css';
 
-
 import App from './App.vue';
 
 Vue.config.productionTip = false;
